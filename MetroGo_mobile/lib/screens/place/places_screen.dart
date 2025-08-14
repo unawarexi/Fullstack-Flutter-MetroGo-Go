@@ -356,7 +356,7 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
     final placeAddress = place['vicinity'] ?? "Unknown Address";
     final placeRating = place['rating']?.toString() ?? "N/A";
     final placeImage = place['photos'] != null
-        ? 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${place['photos'][0]['photo_reference']}&key=AIzaSyBoWy2-vzkQzOw9FrCKUyfxWpa5_dsPi10'
+        ? 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${place['photos'][0]['photo_reference']}&key='
         : null;
     
     // Get place types for tags
